@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "allowJs": true,
+    "outDir": "./dist/",
+    "strictNullChecks": true
+  }
+}
