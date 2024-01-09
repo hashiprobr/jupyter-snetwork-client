@@ -232,14 +232,18 @@ module.exports = {
             },
         },
         {
-            files: ['*.ts'],
+            files: [
+                '*.ts',
+            ],
             parser: '@typescript-eslint/parser',
             parserOptions: {
-                project: ['tsconfig.json'],
+                project: [
+                    'tsconfig.json',
+                ],
             },
             plugins: [
-                '@stylistic/ts',
                 '@typescript-eslint',
+                '@stylistic/ts',
             ],
             rules: {
                 'default-param-last': ['off'],
@@ -255,7 +259,11 @@ module.exports = {
                 'no-use-before-define': ['off'],
                 'no-useless-constructor': ['off'],
                 'require-await': ['off'],
-                '@stylistic/ts/member-delimiter-style': ['warn'],
+                '@stylistic/js/comma-dangle': ['off'],
+                '@stylistic/js/no-extra-parens': ['off'],
+                '@stylistic/js/no-extra-semi': ['off'],
+                '@stylistic/js/quotes': ['off'],
+                '@stylistic/js/semi': ['off'],
                 '@typescript-eslint/adjacent-overload-signatures': ['warn'],
                 '@typescript-eslint/array-type': ['warn'],
                 '@typescript-eslint/await-thenable': ['warn'],
@@ -343,6 +351,12 @@ module.exports = {
                 '@typescript-eslint/triple-slash-reference': ['warn'],
                 '@typescript-eslint/unbound-method': ['warn'],
                 '@typescript-eslint/unified-signatures': ['warn'],
+                '@stylistic/ts/comma-dangle': ['warn', 'always-multiline'],
+                '@stylistic/ts/member-delimiter-style': ['warn'],
+                '@stylistic/ts/no-extra-parens': ['warn'],
+                '@stylistic/ts/no-extra-semi': ['warn'],
+                '@stylistic/ts/quotes': ['warn', 'single'],
+                '@stylistic/ts/semi': ['warn'],
             },
         },
         {
