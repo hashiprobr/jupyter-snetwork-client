@@ -1,6 +1,6 @@
 {
   "name": "jupyter-snetwork-client",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "TypeScript client for jupyter-snetwork",
   "homepage": "https://github.com/hashiprobr/jupyter-snetwork-client#readme",
   "bugs": {
@@ -12,7 +12,6 @@
   },
   "license": "EPL-2.0",
   "author": "Marcelo Hashimoto <marcelo.hashimoto@gmail.com>",
-  "type": "module",
   "main": "src/index.ts",
   "scripts": {
     "build": "webpack --mode production --devtool source-map",
