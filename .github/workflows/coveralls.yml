@@ -1,0 +1,27 @@
+name: Coveralls
+
+on:
+  - push
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+
+    - name: Setup Node.js 20.x
+      uses: actions/setup-node@v4.0.3
+      with:
+        node-version: 20.x
+
+    - name: Checkout
+      uses: actions/checkout@v4.1.7
+
+    - name: Install
+      run: npm install
+
+    - name: Test
+      run: npm test -- --silent --coverage
+
+    - name: Coveralls GitHub Action
+      uses: coverallsapp/github-action@v2.3.0

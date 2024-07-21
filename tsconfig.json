@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "sourceMap": true,
     "allowJs": true,
-    "outDir": "./dist/",
-    "strictNullChecks": true
+    "esModuleInterop": true,
+    "moduleResolution": "bundler",
+    "outDir": "dist",
+    "target": "ES6"
   }
 }
