@@ -4,6 +4,7 @@
     "esModuleInterop": true,
     "moduleResolution": "bundler",
     "outDir": "dist",
+    "strictNullChecks": true,
     "target": "ES6"
   }
 }
