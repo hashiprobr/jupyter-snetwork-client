@@ -1,6 +1,6 @@
 {
   "name": "jupyter-snetwork-client",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "TypeScript client for jupyter-snetwork. This library should not be used on its own.",
   "homepage": "https://github.com/hashiprobr/jupyter-snetwork-client#readme",
   "bugs": {
