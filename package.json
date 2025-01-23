@@ -31,6 +31,9 @@
     "preset": "ts-jest",
     "testEnvironment": "jest-fixed-jsdom"
   },
+  "dependencies": {
+    "pixi.js": "^8.7.0"
+  },
   "devDependencies": {
     "@stylistic/eslint-plugin-js": "^2.13.0",
     "@stylistic/eslint-plugin-ts": "^2.13.0",

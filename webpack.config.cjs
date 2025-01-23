@@ -7,6 +7,9 @@ module.exports = {
             },
         ],
     },
+    externals: {
+        'pixi.js': 'PIXI',
+    },
     output: {
         library: {
             name: 'snetwork',
