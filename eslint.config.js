@@ -412,7 +412,6 @@ export default [
             '@typescript-eslint/prefer-optional-chain': ['warn'],
             '@typescript-eslint/prefer-promise-reject-errors': ['warn'],
             '@typescript-eslint/prefer-readonly': ['warn'],
-            '@typescript-eslint/prefer-readonly-parameter-types': ['warn'],
             '@typescript-eslint/prefer-reduce-type-parameter': ['warn'],
             '@typescript-eslint/prefer-regexp-exec': ['warn'],
             '@typescript-eslint/prefer-return-this-type': ['warn'],

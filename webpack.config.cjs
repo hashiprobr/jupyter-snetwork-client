@@ -4,6 +4,10 @@ module.exports = {
         rules: [
             {
                 use: 'ts-loader',
+                resolve: {
+                    extensions: ['.ts', '.js'],
+                    fullySpecified: false,
+                },
             },
         ],
     },

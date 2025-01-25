@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2024 Marcelo Hashimoto
+ * Copyright (c) 2025 Marcelo Hashimoto
  *
  * This program and the accompanying materials are made
  * available under the terms of the Eclipse Public License 2.0
@@ -8,8 +8,8 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
-import index from '../index';
+import { Handler } from '../handler';
 
 test('stub', () => {
-    expect(index).toBeDefined();
+    expect(Handler).toBeDefined();
 });

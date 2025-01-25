@@ -8,14 +8,27 @@
  * SPDX-License-Identifier: EPL-2.0
  */
 
+import { Renderer } from './renderer';
+
 class Index {
-    private readonly value: boolean;
+    private readonly renderers: Map<number, Renderer>;
 
     public constructor() {
-        this.value = true;
+        this.renderers = new Map();
     }
+
+    public start = (key: number): Renderer => {
+        let renderer = this.renderers.get(key);
+        if (typeof renderer === 'undefined') {
+            renderer = new Renderer(key);
+            this.renderers.set(key, renderer);
+        }
+        return renderer;
+    };
+
+    public stop = (key: number): void => {
+        this.renderers.delete(key);
+    };
 }
 
-const index = new Index();
-
-export default index;
+export default new Index();
