@@ -13,7 +13,7 @@ import type { Channel } from 'jupyter-jchannel-client';
 import { Handler } from './handler';
 
 export class Renderer {
-    private channel: null | Channel;
+    private channel: Channel | null;
     private readonly handler: Handler;
 
     public constructor(key: number) {
