@@ -32,7 +32,7 @@
     "testEnvironment": "jest-fixed-jsdom"
   },
   "dependencies": {
-    "jupyter-jchannel-client": "~0.3.7",
+    "jupyter-jchannel-client": "~0.3.8",
     "pixi.js": "^8.7.2"
   },
   "devDependencies": {
